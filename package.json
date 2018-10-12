@@ -1,0 +1,55 @@
+{
+	"name": "restore-npm-cache",
+	"version": "0.1.0",
+	"description": "Restore contents from an npm cache",
+	"repository": "shinnn/restore-npm-cache",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "ISC",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nyc node test.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"npm",
+		"unpack",
+		"unarchive",
+		"untar",
+		"extract",
+		"restore",
+		"tgz",
+		"cache",
+		"cacache",
+		"promise",
+		"stream",
+		"package",
+		"integrity",
+		"secure",
+		"async"
+	],
+	"dependencies": {
+		"inspect-with-kind": "^1.0.5",
+		"is-plain-obj": "^1.1.0",
+		"mkdirp": "^0.5.1",
+		"npcache": "^1.0.0",
+		"pump": "^3.0.0",
+		"tar": "^4.4.6"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config": "^6.7.2",
+		"eslint": "^5.6.1",
+		"npm-cache-path": "^1.1.1",
+		"nyc": "^13.0.1",
+		"nyc-config-common": "^1.0.0",
+		"rmfr": "^2.0.0",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
+	}
+}
